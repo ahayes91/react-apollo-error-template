@@ -6,7 +6,7 @@ import {
   } from "@apollo/client";
   import "./index.css";
 
-  const ALL_PEOPLE = gql`
+  export const ALL_PEOPLE = gql`
     query AllPeople {
       people {
         id
@@ -15,7 +15,7 @@ import {
     }
   `;
   
-  const GET_PERSON = gql`
+  export const GET_PERSON = gql`
     query GetPerson($name: String) {
       person(name: $name) {
         id
@@ -24,7 +24,7 @@ import {
     }
   `;
   
-  const ADD_PERSON = gql`
+  export const ADD_PERSON = gql`
     mutation AddPerson($name: String) {
       addPerson(name: $name) {
         id

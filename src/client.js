@@ -23,7 +23,7 @@ const PersonType = new GraphQLObjectType({
   },
 });
 
-const peopleData = [
+export const peopleData = [
   { id: 1, name: 'John Smith' },
   { id: 2, name: 'Sara Smith' },
   { id: 3, name: 'Budd Deey' },
